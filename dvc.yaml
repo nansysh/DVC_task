@@ -1,0 +1,11 @@
+stages:
+  train:
+    cmd: python src/train.py
+    deps:
+      - src/train.py
+      - data/processed/data_processed.csv
+      - params.yaml  # Добавляем зависимость от файла с гиперпараметрами
+    outs:
+      - models/model.pkl
+    metrics:
+      - metrics/metrics.json

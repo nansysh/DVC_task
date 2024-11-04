@@ -1,4 +1,6 @@
 [core]
-    remote = myremote
+    remote = winter_is_coming
 ['remote "myremote"']
     url = s3://mybucket/dvcstore
+['remote "winter_is_coming"']
+    url = https://t1v.scibox.tech/spaces/36/projects/52/storages/62
